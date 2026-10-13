@@ -3,7 +3,6 @@ title: "Code de droit international privé"
 type: code
 jurisdiction: mc
 language: fr
-date: 2022-08-13
 last_amended: 2022-08-13
 status: in_force
 publication: "Chargement en cours..."

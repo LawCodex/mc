@@ -3,6 +3,8 @@ title: "Constitution du 17 décembre 1962 de la Principauté"
 type: constitution
 jurisdiction: mc
 language: fr
+date: 1962-12-17
+last_amended: 2002-04-02
 status: in_force
 publication: "Journal de Monaco du 24 décembre 1962"
 publication_url: "https://journaldemonaco.gouv.mc/Journaux/1962/Journal-5490"

@@ -3,7 +3,6 @@ title: "Code de commerce"
 type: code
 jurisdiction: mc
 language: fr
-date: 2025-09-30
 last_amended: 2025-09-30
 status: in_force
 source: "https://legimonaco.mc/code/code-commerce"

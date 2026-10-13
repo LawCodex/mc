@@ -3,7 +3,6 @@ title: "Code de la route"
 type: code
 jurisdiction: mc
 language: fr
-date: 2026-07-04
 last_amended: 2026-07-04
 status: in_force
 publication: "Chargement en cours..."

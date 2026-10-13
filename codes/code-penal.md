@@ -3,7 +3,6 @@ title: "Code pénal"
 type: code
 jurisdiction: mc
 language: fr
-date: 2025-11-22
 last_amended: 2025-11-22
 status: in_force
 source: "https://legimonaco.mc/code/code-penal"

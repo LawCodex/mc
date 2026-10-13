@@ -3,7 +3,6 @@ title: "Code de procédure pénale"
 type: code
 jurisdiction: mc
 language: fr
-date: 2026-06-27
 last_amended: 2026-06-27
 status: in_force
 source: "https://legimonaco.mc/code/code-procedure-penale"

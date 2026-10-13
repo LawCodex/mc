@@ -3,7 +3,6 @@ title: "Code de la mer"
 type: code
 jurisdiction: mc
 language: fr
-date: 2026-05-30
 last_amended: 2026-05-30
 status: in_force
 publication: "Chargement en cours..."

@@ -3,7 +3,6 @@ title: "Code des taxes sur le chiffre d'affaires"
 type: code
 jurisdiction: mc
 language: fr
-date: 2026-08-01
 last_amended: 2026-08-01
 status: in_force
 publication: "Chargement en cours..."

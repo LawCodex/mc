@@ -3,7 +3,6 @@ title: "Code de procédure civile"
 type: code
 jurisdiction: mc
 language: fr
-date: 2022-05-28
 last_amended: 2022-05-28
 status: in_force
 source: "https://legimonaco.mc/code/code-procedure-civile"
