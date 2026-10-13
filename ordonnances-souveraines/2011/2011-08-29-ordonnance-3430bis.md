@@ -1,0 +1,28 @@
+---
+title: "Ordonnance Souveraine n° 3.430 bis du 29 août 2011 modifiant l'Ordonnance Souveraine n° 8.001 du 9 mai 1984, modifiée, portant classification des postes diplomatiques et consulaires à l' étranger"
+identifier: "3.430bis"
+type: sovereign_ordinance
+jurisdiction: mc
+language: fr
+date: 2011-08-29
+last_amended: 2011-10-08
+status: in_force
+publication: "Journal de Monaco du 7 octobre 2011"
+publication_url: "https://journaldemonaco.gouv.mc/Journaux/2011/Journal-8037"
+thematic: "Relations diplomatiques et consulaires"
+source: "https://legimonaco.mc/tnc/ordonnance/2011/08-29-3.430bis"
+source_version: "https://legimonaco.mc/tnc/ordonnance/2011/08-29-3.430bis@2011.10.08/"
+retrieved: 2026-10-13
+---
+
+# Ordonnance Souveraine n° 3.430 bis du 29 août 2011 modifiant l'Ordonnance Souveraine n° 8.001 du 9 mai 1984, modifiée, portant classification des postes diplomatiques et consulaires à l' étranger
+
+Vu la Constitution ;
+
+Vu l'ordonnance du 7 mars 1878, modifiée, et l'Ordonnance Souveraine n° 862 du 9 décembre 1953 portant organisation des consulats ;
+
+Vu l'Ordonnance Souveraine n° 8.001 du 9 mai 1984, modifiée, portant classification des postes diplomatiques et consulaires à l'étranger ;
+
+*Voir l'article 2 de l'Ordonnance Souveraine n° 8.001 du 9 mai 1984.*
+
+Notre Secrétaire d'Etat, Notre Directeur des Services Judiciaires et Notre Ministre d'Etat sont chargés, chacun en ce qui le concerne, de l'exécution de la présente ordonnance.
