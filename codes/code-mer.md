@@ -5,8 +5,7 @@ jurisdiction: mc
 language: fr
 last_amended: 2026-05-30
 status: in_force
-publication: "Chargement en cours..."
-publication_url: "/tnc/loi/1998/03-27-1.198"
+published_by: "https://legimonaco.mc/tnc/loi/1998/03-27-1.198"
 source: "https://legimonaco.mc/code/code-mer"
 source_version: "https://legimonaco.mc/code/code-mer@2026.05.30/"
 retrieved: 2026-10-13

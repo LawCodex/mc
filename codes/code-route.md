@@ -5,8 +5,7 @@ jurisdiction: mc
 language: fr
 last_amended: 2026-07-04
 status: in_force
-publication: "Chargement en cours..."
-publication_url: "/tnc/ordonnance/1957/12-17-1.691"
+published_by: "https://legimonaco.mc/tnc/ordonnance/1957/12-17-1.691"
 source: "https://legimonaco.mc/code/code-route"
 source_version: "https://legimonaco.mc/code/code-route@2026.07.04/"
 retrieved: 2026-10-13

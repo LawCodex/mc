@@ -211,11 +211,20 @@ def convert(it, raw):
     elif typ == "constitution":
         meta["last_amended"] = "2002-04-02"  # loi n° 1.249 du 2 avril 2002 portant révision de la Constitution
     meta["status"] = "in_force"
+    if inf.get("party"):
+        meta["party"] = inf["party"]["text"]
+    if inf.get("enteredForceDomestic") and inf["enteredForceDomestic"].get("date"):
+        meta["in_force_domestic"] = inf["enteredForceDomestic"]["date"]
     pub = inf.get("publication")
     if pub:
-        meta["publication"] = pub["text"]
-        if pub.get("href"):
-            meta["publication_url"] = pub["href"]
+        href = pub.get("href") or ""
+        if href.startswith("/"):
+            # treaties: link to the sovereign ordinance that made the text enforceable
+            meta["published_by"] = BASE + href.split("@")[0]
+        else:
+            meta["publication"] = pub["text"]
+            if href:
+                meta["publication_url"] = href
     if inf.get("theme"):
         meta["thematic"] = inf["theme"]["text"]
     meta["source"] = BASE + path.split("@")[0] if typ not in ("constitution",) else BASE + "/constitution"
@@ -224,7 +233,7 @@ def convert(it, raw):
     meta["retrieved"] = RETRIEVED
     fm = ["---"]
     for k, v in meta.items():
-        if k in ("type", "jurisdiction", "language", "status", "date", "last_amended", "retrieved"):
+        if k in ("type", "jurisdiction", "language", "status", "date", "last_amended", "retrieved", "in_force_domestic"):
             fm.append(f"{k}: {v}")
         else:
             fm.append(f"{k}: " + json.dumps(v, ensure_ascii=False))

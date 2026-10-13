@@ -5,8 +5,7 @@ jurisdiction: mc
 language: fr
 last_amended: 2026-05-30
 status: in_force
-publication: "Chargement en cours..."
-publication_url: "/tnc/loi/2017/12-12-1.456"
+published_by: "https://legimonaco.mc/tnc/loi/2017/12-12-1.456"
 source: "https://legimonaco.mc/code/code-environnement"
 source_version: "https://legimonaco.mc/code/code-environnement@2026.05.30/"
 retrieved: 2026-10-13

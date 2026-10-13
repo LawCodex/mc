@@ -5,8 +5,7 @@ jurisdiction: mc
 language: fr
 last_amended: 2022-08-13
 status: in_force
-publication: "Chargement en cours..."
-publication_url: "/tnc/loi/2017/06-28-1.448"
+published_by: "https://legimonaco.mc/tnc/loi/2017/06-28-1.448"
 source: "https://legimonaco.mc/code/code-droit-international-prive"
 source_version: "https://legimonaco.mc/code/code-droit-international-prive@2022.08.13/"
 retrieved: 2026-10-13

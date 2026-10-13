@@ -5,8 +5,7 @@ jurisdiction: mc
 language: fr
 last_amended: 2026-08-01
 status: in_force
-publication: "Chargement en cours..."
-publication_url: "/tnc/ordonnance/1996/02-19-11.887"
+published_by: "https://legimonaco.mc/tnc/ordonnance/1996/02-19-11.887"
 source: "https://legimonaco.mc/code/code-taxes-chiffre-affaires"
 source_version: "https://legimonaco.mc/code/code-taxes-chiffre-affaires@2026.08.01/"
 retrieved: 2026-10-13
