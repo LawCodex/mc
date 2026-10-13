@@ -26,7 +26,8 @@ MUST_NOT = [
     {"range": {"endDate": {"lte": "now"}}},
 ]
 FIELDS = ["path", "title", "type", "date", "tncNature", "number", "startDate", "endDate",
-          "legislationAbrogated", "regulationAbrogated", "thematic", "contentId"]
+          "legislationAbrogated", "regulationAbrogated", "thematic", "contentId", "taiNature", "tai",
+          "intoForceDate"]
 
 
 def search(types):
@@ -82,12 +83,15 @@ def main():
     idx = os.path.join(RAW, "index.json")
     if not os.path.exists(idx):
         items = [{"path": "/constitution", "type": "constitution", "title": "Constitution de la Principauté"}]
-        items += search(["tc"]) + search(["legislation"]) + search(["regulation"])
+        items += search(["tc"]) + search(["legislation"]) + search(["regulation"]) + search(["tai"])
         json.dump(items, open(idx, "w"), ensure_ascii=False, indent=0)
     items = json.load(open(idx))
+    if not any(i["type"] == "tai" for i in items):  # index built before treaties were added
+        items += search(["tai"])
+        json.dump(items, open(idx, "w"), ensure_ascii=False, indent=0)
     items = [i for i in items if i.get("legislationAbrogated") != "yes" and i.get("regulationAbrogated") != "yes"]
     # codes, constitution and laws first
-    items.sort(key=lambda i: {"constitution": 0, "tc": 1, "legislation": 2}.get(i["type"], 3))
+    items.sort(key=lambda i: {"constitution": 0, "tc": 1, "legislation": 2, "tai": 4}.get(i["type"], 3))
     print(len(items), "documents to fetch", file=sys.stderr)
     n = 0
     with cf.ThreadPoolExecutor(2) as ex:

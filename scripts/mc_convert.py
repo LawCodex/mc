@@ -188,6 +188,8 @@ def convert(it, raw):
         ftype = "constitution"
     elif typ == "tc":
         ftype = "code"
+    elif typ == "tai":
+        ftype = "treaty"
     else:
         ftype = NATURE_DIR.get(nature, ("autres", "other"))[1]
     path = it["path"]
@@ -244,6 +246,16 @@ def rel_path(it, used):
     if typ == "tc":
         name = it["path"].split("/")[2].split("@")[0]
         return f"codes/{name}.md"
+    if typ == "tai":
+        date = it.get("date") or "0000-00-00"
+        nat = it.get("taiNature") or it["path"].split("/")[2]
+        name = f"{date}-{slugify(nat, 30)}-{slugify(it.get('number') or it['path'].split('/')[-1].split('@')[0], 30)}"
+        base, k = name, 2
+        while f"traites/{date[:4]}/{name}" in used:
+            name = f"{base}-{k}"
+            k += 1
+        used.add(f"traites/{date[:4]}/{name}")
+        return f"traites/{date[:4]}/{name}.md"
     nature = it.get("tncNature") or "autre"
     d = NATURE_DIR.get(nature, ("autres", "other"))[0]
     date = it.get("date") or "0000-00-00"
@@ -262,7 +274,7 @@ def rel_path(it, used):
 def main():
     items = json.load(open(os.path.join(RAW, "index.json")))
     items = [i for i in items if i.get("legislationAbrogated") != "yes" and i.get("regulationAbrogated") != "yes"]
-    for d in ["constitution", "codes"] + sorted({v[0] for v in NATURE_DIR.values()}) + ["autres"]:
+    for d in ["constitution", "codes", "traites"] + sorted({v[0] for v in NATURE_DIR.values()}) + ["autres"]:
         p = os.path.join(REPO, d)
         if os.path.isdir(p):
             shutil.rmtree(p)
